@@ -3,6 +3,7 @@ from typing import Dict, List
 # G is a graph, represented by a dictionary
 # each key is a vertex, each value is a list of vertices that are adjacent vertex
 
+# this is more space efficient, but may be slower than recurisve dfs
 def dfs_traversal(G: Dict[str, List[str]], s: str, vertexState: Dict[str, int]):
     stack = deque()
     stack.append([s, 0]) # stack is used to hold the vertex on the path and its child index
