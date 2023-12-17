@@ -13,7 +13,7 @@ def dfs_traversal(G: Dict[str, List[str]], s: str, vertexState: Dict[str, int]):
         child_index = index
 
 
-        child = vertex # should point to G[vertex][child_index], just to prevent error if child_index == len(G[vertex])
+        child = vertex # should point to G[vertex][child_index], just to prevent error if child_index == len(G[vertex]) since we need to define it outside the loop and use  it in line 26 block
 
         # if this child index is visited , point to the next
         while child_index < len(G[vertex]):
